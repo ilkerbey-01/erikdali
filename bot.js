@@ -14,20 +14,12 @@ const cevaplar = [
 
 client.on('ready', () => {
   console.log(`${client.user.tag} adına giriş yapıldı!`);
-client.user.setActivity("Minecraft ");
+client.user.setActivity("ilkerbey yapımı, prefix=! ");
 });
 
 client.login(auth.token);
 
 const commands = [
-{
-	command: 'ping',
-	description: 'Pings the bot',
-	execute: function(msg) {
-    msg.reply("Pong!");
-    console.log()
-	}
-},
 {
 	command: 'ping',
 	description: 'Pings the bot',
