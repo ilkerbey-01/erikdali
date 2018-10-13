@@ -2,11 +2,7 @@ const Discord = require('discord.js');
 
 const cevaplar = [
     "evet",
-    "hayır",
-    "belki",
-    "olabilir",
-    "daha sonra tekrar sor",
-    "imkansız"
+    "hayır"
 ];
 
 exports.run = function(client, message, args) {
@@ -14,7 +10,7 @@ exports.run = function(client, message, args) {
 
     var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)];
 
-    if(!soru) return message.reply('Bir soru belirt. **Doğru Kullanım**: !8ball <soru>')
+    if(!soru) return message.reply('Bir kişi belirt. **Doğru Kullanım**: !geymidir <kişi>')
     else message.channel.send(cevap)
 
 };  
@@ -27,7 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: '8ball', 
-  description: 'Sihirli 8ball sorularınızı cevaplar',
-  usage: '8ball <soru>'
+  name: 'geymidir', 
+  description: 'Eşcinsel arkadaşlarını bul!',
+  usage: 'geymidir <kişi>'
 };
